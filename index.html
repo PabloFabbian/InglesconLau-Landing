@@ -37,33 +37,55 @@
 
   <!-- Schema.org JSON-LD -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Laura",
-    "jobTitle": "Profesora de Inglés",
-    "description": "Clases de inglés 1 a 1 para profesionales y universitarios. Nivel C2 EF SET. Profesorado universitario UCA.",
-    "url": "https://inglesconlau.vercel.app",
-    "image": "https://inglesconlau.vercel.app/assets/Lau.webp",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Buenos Aires",
-      "addressCountry": "AR"
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Laura — Inglés para Profesionales",
+      "description": "Clases de inglés 1 a 1 para profesionales y universitarios. Nivel C2 EF SET. Profesorado universitario UCA.",
+      "url": "https://inglesconlau.vercel.app",
+      "image": "https://inglesconlau.vercel.app/assets/Lau.webp",
+      "telephone": "+5491138108867",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Buenos Aires",
+        "addressCountry": "AR"
+      },
+      "priceRange": "$30.000 ARS por hora",
+      "openingHours": "Mo-Sa 09:00-21:00",
+      "sameAs": ["https://wa.me/5491138108867"]
     },
-    "offers": {
-      "@type": "Offer",
-      "name": "Clases de inglés online 1 a 1",
-      "price": "30000",
-      "priceCurrency": "ARS",
-      "availability": "https://schema.org/InStock",
-      "description": "Clases personalizadas de inglés por videollamada. Primera clase de diagnóstico gratuita."
-    },
-    "knowsAbout": ["Inglés para profesionales", "Preparación para emigrar", "Inglés conversacional"],
-    "hasCredential": [
-      { "@type": "EducationalOccupationalCredential", "name": "Profesorado de Inglés", "credentialCategory": "degree", "recognizedBy": { "@type": "Organization", "name": "UCA" } },
-      { "@type": "EducationalOccupationalCredential", "name": "EF SET C2", "credentialCategory": "certificate", "recognizedBy": { "@type": "Organization", "name": "EF Education First" } }
-    ]
-  }
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Cuánto cuestan las clases de inglés?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "$30.000 ARS por hora. La primera clase de diagnóstico es completamente gratuita."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Las clases son online o presenciales?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Las clases son 100% online por videollamada, desde cualquier lugar."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Para quién son las clases?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Para profesionales que necesitan el inglés para trabajar, personas que quieren emigrar, y universitarios que quieren mejorar su fluidez."
+          }
+        }
+      ]
+    }
+  ]
   </script>
 
   <!-- Favicons -->
